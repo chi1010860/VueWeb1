@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Vue. js Test</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 </head>
 <body>
@@ -21,7 +21,11 @@
     <li v-for="son in family">
       {{ son.son }}
     </li>
-  </ul>
+    </ul>
+    分數：<input type="text" v-model="score"><br>
+    結果：
+    <span v-if="score>=60">及格</span>
+    <span v-else>不及格</span>
   </div>
   
   <div id="app-2">

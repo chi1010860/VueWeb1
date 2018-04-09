@@ -8,6 +8,7 @@ var app = new Vue({
       ],
       message: 'You loaded this page on ' + new Date().toLocaleString(),
       isShow: true,
+      score: 60,
     }
 })
   
@@ -21,7 +22,7 @@ var app2 = new Vue({
         ],
         message:"What the fuck"
     },
-    methods:{
+    methods:{ // 所有function都註冊到這裡
         reverseMessage: function(){
         this.message = this.message.split('').reverse().join('')
         }
