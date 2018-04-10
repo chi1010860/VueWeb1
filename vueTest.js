@@ -20,7 +20,7 @@ var app2 = new Vue({
         { text: 'b'},
         { text: 'c'},
         ],
-        message:"What the fuck"
+        message:"Dynamic message"
     },
     methods:{ // 所有function都註冊到這裡
         reverseMessage: function(){
