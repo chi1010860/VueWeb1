@@ -1,0 +1,7 @@
+// 後端編譯基礎設定
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+    }
+}

@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Vue. js Test</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 </head>
+
 <body>
   <div id="app">
     <div v-bind:title="message">
       You can see me
     </div>
     {{message}}
+    <br> {{family[0].son}}
     <br>
-    {{family[0].son}}
-    <br><br>
-    
+    <br>
+
     <span v-show="isShow">This is v-show span.</span>
     <ul>
-    <li v-for="son in family">
-      {{ son.son }}
-    </li>
+      <li v-for="son in family">
+        {{ son.son }}
+      </li>
     </ul>
-    分數：<input type="text" v-model="score"><br>
-    結果：
+    分數：
+    <input type="text" v-model="score">
+    <br> 結果：
     <span v-if="score>=60">及格</span>
     <span v-else>不及格</span>
   </div>
-  
+
   <div id="app-2">
     <ul>
       <li v-for="todo in todos">
@@ -36,12 +39,13 @@
     </ul>
     <span>
       {{message}}
-    </span><br>
+    </span>
+    <br>
     <input type="text" v-model="message">
-    <input type="button" value="Reverse it" 
-           v-on:click="reverseMessage">
-    
+    <input type="button" value="Reverse it" v-on:click="reverseMessage">
+
   </div>
-  <script src="./Learning.js"></script>
+  <script src="./vueTest.js"></script>
 </body>
+
 </html>

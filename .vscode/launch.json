@@ -14,7 +14,7 @@
             "type": "node",
             "request": "launch",
             "name": "啟動程式",
-            "program": "${workspaceFolder}/Learning.js"
+            "program": "${workspaceFolder}/vueTest.js"
         }
     ]
 }
