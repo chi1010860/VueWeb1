@@ -29,6 +29,12 @@ var GpxAside = Vue.extend({
     template: '<div class="aside">Aside</div>'
 });
 
+var GpxButton = Vue.extend({
+    template: '<div class="gpx-button">' +
+        '<input type="button" value="自定義元件" />' +
+        '</div>'
+});
+
 // create a root instance
 var vm = new Vue({
     el: '#app',
@@ -37,11 +43,7 @@ var vm = new Vue({
         GpxHeader,
         GpxMain,
         GpxAside,
-        GpxButton: {
-            template: '<div class="gpx-button">' +
-                '<input type="button" value="自定義元件" />' +
-                '</div>'
-        },
+        GpxButton
     }
 });
 
