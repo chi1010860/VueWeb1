@@ -3,8 +3,8 @@ const express = require('express');
 
 const app = express(); // 產生Express Application 物件
 
-app.listen(3000, function () {
-    console.log("Server has been built on http://localhost:3000/");
+app.listen(80, function () {
+    console.log("Server has been built on http://localhost:80/");
 });
 
 app.use(express.static(__dirname + '/public'));
