@@ -55,13 +55,13 @@
 <body>
     <div id="app">
         <div class="container">
-            <img src="./contents/IMG_5947.jpg" v-show="!isBroken" />
-            <img src="./contents/IMG_5975.PNG" v-show="isBroken" />
+            <img src="./images/IMG_5947.JPG" v-show="!isBroken" />
+            <img src="./images/IMG_5975.PNG" v-show="isBroken" />
             <button class="btn" v-on:click="playSound()">按一下</button>
         </div>
         <br>
         <div class="container" v-show="isBroken">
-            <img class="img-btn" src=./contents/tools.jpg v-on:click="playRepair()" />
+            <img class="img-btn" src=./images/tools.png v-on:click="playRepair()" />
             <!-- <button class="btn" v-on:click="playRepair()">修理</button> -->
         </div>
     </div>

@@ -6,7 +6,7 @@ var app = new Vue({
     methods: {
         playSound: function () {
             var r = Math.ceil(Math.random() * 100);
-            if (!this.isBroken){
+            if (!this.isBroken) {
                 if (r <= 20) {
                     this.playMothercake();
                 }
@@ -18,16 +18,16 @@ var app = new Vue({
                 this.playMothercake();
             }
         },
-        playLove: function(){
+        playLove: function () {
             var love = new Audio("./sounds/love.mp3");
             love.play();
         },
-        playMothercake: function() {
+        playMothercake: function () {
             var mothercake = new Audio("./sounds/mothercake.mp3");
             mothercake.play();
             this.isBroken = true;
         },
-        playRepair: function() {
+        playRepair: function () {
             var repair = new Audio("./sounds/repair.mp3");
             repair.play();
             this.isBroken = false;
