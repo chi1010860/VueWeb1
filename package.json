@@ -4,8 +4,7 @@
   "description": "Love Bear",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "stop": "node close.js"
+    "start": "node server.js"
   },
   "author": "chriskao<chi1010860@gmail.com>",
   "license": "ISC",
