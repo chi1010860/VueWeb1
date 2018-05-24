@@ -2,10 +2,7 @@ const fs = require('fs');
 const express = require('express');
 
 const app = express(); // 產生Express Application 物件
-
-app.listen(80, function () {
-    console.log("Server has been built on http://localhost:80/");
-});
+var port = process.env.PORT || 3000
 
 app.use(express.static(__dirname + '/public'));
 
@@ -75,3 +72,7 @@ app.get("/api/query", function (req, res) {
     var obj = req.query;
     res.json(obj);
 })
+
+app.listen(port, function () {
+    console.log("Server has been built on http://localhost:80/");
+});

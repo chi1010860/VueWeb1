@@ -1,7 +1,7 @@
 {
   "name": "lovebear",
   "version": "1.0.0",
-  "description": "Love Bear\r =========",
+  "description": "Love Bear",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
