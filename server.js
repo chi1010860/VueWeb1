@@ -1,32 +1,32 @@
-const fs = require('fs');
-const express = require('express');
+const fs = require('fs')
+const express = require('express')
 
 const app = express(); // 產生Express Application 物件
 var port = process.env.PORT || 3000
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'))
 
-app.use('/images', express.static(__dirname + '/images'));
+app.use('/images', express.static(__dirname + '/images'))
 
-app.use('/sounds', express.static(__dirname + '/sounds'));
+app.use('/sounds', express.static(__dirname + '/sounds'))
 
 app.get("/", function (req, res) {
     res.send("<h1>Node.js Server Test</h1>");
-});
+})
 
 app.get("/about", function (req, res) {
     res.send("<h1>About page</h1>")
-});
+})
 
 app.get("/about/about-me", function (req, res) {
     res.send("<h1>About me page</h1>")
-});
+})
 
 app.get("/blog", function (req, res) {
     res.json({
         text: 'wtf'
     })
-});
+})
 
 app.get("/post/:id", function (req, res) {
     res.send(req.params.id)
@@ -69,10 +69,11 @@ app.get("/gogo/:go", function (req, res) {
 })
 
 app.get("/api/query", function (req, res) {
-    var obj = req.query;
-    res.json(obj);
+    var obj = req.query
+    res.json(obj)
 })
 
 app.listen(port, function () {
-    console.log("Server has been built on http://localhost:80/");
+    console.log("Server has been built on http://localhost:3000/")
+    console.log("Or on http://caca77.azurewebsites.net/")
 });
