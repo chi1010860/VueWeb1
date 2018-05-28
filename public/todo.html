@@ -25,14 +25,13 @@
                 <input type="text" id="myInput" placeholder="要做的事..." v-model="newTodo" v-on:keyup="addKeyPress">
                 <span id="btnAdd" v-on:click="newElement" class="addBtn">&plus;</span>
             </div>
-            <div>
-                <ul id="myUL">
-                    <li v-for="(item, index) in todos" v-bind:key="item.id" v-bind:id="index" v-on:click="check">
-                        {{ item.todo }}
-                        <span class="close" v-bind:id="index" v-on:click="cancel">&times;</span>
-                    </li>
-                </ul>
-            </div>
+
+            <ul id="myUL">
+                <li v-for="(item, index) in todos" v-bind:key="item.id" v-bind:id="index" v-on:click="check">
+                    {{ item.todo }}
+                    <span class="close" v-bind:id="index" v-on:click="cancel">&times;</span>
+                </li>
+            </ul>
         </div>
     </div>
 

@@ -90,7 +90,7 @@ body {
 
 /* Remove margins and padding from the list */
 ul {
-    margin: 0;
+    margin: 10px 0px;
     padding: 0;
 }
 
