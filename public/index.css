@@ -1,0 +1,226 @@
+#app{
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    top:8px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.container .img-btn {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: #003344;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+  .nav-bar a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #c7c7c7;
+  }
+  .btn-sidebar-open {
+    font-size: 24px;
+    cursor: pointer;
+    float: left;
+  }
+
+.todo {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+/*Todo List*/
+* {
+box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+margin: 0;
+padding: 0;
+}
+
+/* Style the list items */
+ul li {
+cursor: pointer;
+position: relative;
+padding: 12px 8px 12px 8px;
+list-style-type: none;
+background: #eee;
+font-size: 18px;
+transition: 0.2s;
+
+/* make the list items unselectable */
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+background: #888;
+color: #fff;
+text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+content: "";
+position: absolute;
+border-color: #fff;
+border-style: solid;
+border-width: 0 2px 2px 0;
+top: 10px;
+left: 16px;
+transform: rotate(45deg);
+height: 15px;
+width: 7px;
+}
+
+/* Style the close button */
+.close {
+position: absolute;
+right: 0;
+top: 0;
+padding: 12px 16px 12px 16px;
+}
+
+.check {
+position: absolute;
+left: 0;
+top: 0;
+padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+background-color: #007399;
+color: white;
+}
+
+/* Style the header */
+.header {
+background-color: #007399;
+padding: 1px 40px;
+color: white;
+text-align: center;
+font-size: 1em;
+height: 15vh;
+}
+.header h2 {
+margin: 10px;
+}
+
+/* Clear floats after the header */
+.header:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the input */
+input {
+border: none;
+width: 90%;
+height: 40px;
+padding: 10px;
+float: left;
+font-size: 1em;
+font-family: "微軟正黑體"
+}
+
+/* Style the "Add" button */
+.addBtn {
+padding: 0px;
+width: 10%;
+height: 40px;
+background: #d9d9d9;
+color: #555;
+float: left;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2em;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.addBtn:hover {
+background-color: #bbb;
+}
+
+@media screen and (max-width: 500px) {
+.header {
+    padding: 1px 1px;
+}
+input {
+    width: 80%;
+}
+.addBtn {
+    width: 20%;
+}
+}

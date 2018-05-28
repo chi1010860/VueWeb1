@@ -2,6 +2,9 @@ var app = new Vue({
     el: "#app",
     data: {
         isBroken: false,
+        todoDB: "",
+        newTodo: "",
+        todos: []
     },
     methods: {
         playSound: function () {

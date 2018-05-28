@@ -5,56 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" type="image/png" href="/images/heart.png" />
-    <title>77 Love Caca</title>
+    <title>77 Loves Caca</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <style>
-        .container {
-            position: relative;
-            width: 100%;
-            max-width: 300px;
-            margin: auto;
-        }
-
-        .container img {
-            width: 100%;
-            height: auto;
-            margin: auto;
-        }
-
-        .container .btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            background-color: #555;
-            color: white;
-            font-size: 16px;
-            padding: 12px 24px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .container .btn:hover {
-            background-color: black;
-            cursor: pointer;
-        }
-
-        .container .img-btn {
-            background-color: #555;
-            color: white;
-            cursor: pointer;
-            width: 50%;
-            display: block;
-            margin: auto;
-        }
-    </style>
+    <link href="/index.css" rel="stylesheet" />
 </head>
 
 <body>
     <div id="app">
+        <div class="nav-bar">
+            <a href="/index.html">🏠</a>
+            <a href="/todo.html">📝</a>
+        </div>
+
         <div class="container">
             <img src="./images/IMG_5947.JPG" v-show="!isBroken" />
             <img src="./images/IMG_5975.PNG" v-show="isBroken" />
@@ -63,7 +25,6 @@
         <br>
         <div class="container" v-show="isBroken">
             <img class="img-btn" src=./images/tools.png v-on:click="playRepair()" />
-            <!-- <button class="btn" v-on:click="playRepair()">修理</button> -->
         </div>
     </div>
 
