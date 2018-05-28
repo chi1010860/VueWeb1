@@ -170,8 +170,9 @@ ul li.checked::before {
     text-align: center;
     font-size: 1em;
     height: 15vh;
-    }
-    .header h2 {
+}
+
+.header h2 {
     margin: 10px;
 }
 
@@ -216,6 +217,7 @@ input {
 @media screen and (max-width: 500px) {
     .header {
         padding: 1px 1px 10px 1px;
+        height: 20vh;
     }
     input {
         width: 80%;
